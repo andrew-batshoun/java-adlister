@@ -10,9 +10,23 @@
 <html>
 <head>
     <title>Profile</title>
+    <%@ include file="partials/head.jsp" %>
+    <style>
+        body{
+            background: lightblue;
+        }
+        h1{
+            text-align: center;
+            margin-top: 3em;
+        }
+    </style>
 </head>
+<%@ include file="partials/navbar.jsp" %>
+
 <body>
-<h1 style="text-align: center">Welcome to your profile!</h1>
+<h1>Welcome to your profile!</h1>
+
+<%@ include file="partials/jsScript.jsp" %>
 
 </body>
 </html>
