@@ -1,30 +1,30 @@
 import java.io.Serializable;
 
 public class Album implements Serializable {
-    private int id;
+    private long id;
     private String artist;
     private String name;
-    private int releaseDate;
-    private int sales;
+    private int year;
+    private float sales;
     private String genre;
 
     public Album() {
     }
 
-    public Album(int id, String artist, String name, int releaseDate, int sales, String genre) {
+    public Album(long id, String artist, String name, int releaseDate, int sales, String genre) {
         this.id = id;
         this.artist = artist;
         this.name = name;
-        this.releaseDate = releaseDate;
+        this.year = releaseDate;
         this.sales = sales;
         this.genre = genre;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -44,19 +44,19 @@ public class Album implements Serializable {
         this.name = name;
     }
 
-    public int getReleaseDate() {
-        return releaseDate;
+    public int getyear() {
+        return year;
     }
 
     public void setReleaseDate(int releaseDate) {
-        this.releaseDate = releaseDate;
+        this.year = releaseDate;
     }
 
-    public int getSales() {
+    public float getSales() {
         return sales;
     }
 
-    public void setSales(int sales) {
+    public void setSales(float sales) {
         this.sales = sales;
     }
 
